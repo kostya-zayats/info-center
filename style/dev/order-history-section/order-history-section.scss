@@ -1,0 +1,135 @@
+.order-history-section {
+  background: url("../../img/bg/earth.png") center center no-repeat;
+  background-size: cover;
+  color: $secondary-text-color;
+  padding: 12.3rem 0 15rem;
+  min-height: 100%;
+
+  @include mobile900 {
+    padding: 2.6rem 0;
+    background: none;
+    background-color: $main-mob-bg;
+  }
+}
+
+.order-history-section-content {
+  width: 100%;
+  max-width: 123.2rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+
+  @include mobile900 {
+    padding: 0 1.6rem;
+  }
+}
+
+.order-history-table {
+  border-radius: .4rem;
+  color: $main-text-color;
+  overflow: hidden;
+}
+
+.order-history-table-row {
+  display: flex;
+  border-bottom: .1rem solid $table-border;
+  background-color: $input-bg;
+
+  @include mobile900 {
+    border-radius: .4rem;
+    flex-direction: column;
+    border-bottom: 0;
+    margin-bottom: 1.2rem;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.order-history-table-row-head {
+  text-transform: uppercase;
+
+  @include mobile900 {
+    display: none;
+  }
+
+  .order-history-table-unit {
+    font-weight: 500;
+    padding: 1.4rem 1.6rem;
+  }
+}
+
+.order-history-table-unit {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  padding: 1.5rem 1.6rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  @include mobile900 {
+    display: flex;
+    order: 2;
+  }
+
+  &:nth-child(2) {
+
+    @include mobile900 {
+      order: 1;
+    }
+  }
+
+  &:before {
+    content: attr(data-label);
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 50%;
+    flex-shrink: 0;
+    display: none;
+
+    @include mobile900 {
+      display: block;
+    }
+  }
+
+  .status {
+    padding: .2rem 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: $status-value-color;
+    border-radius: .3rem;
+
+    &.active {
+      background-color: $active-status;
+    }
+
+    &.expired {
+      background-color: $expired-status;
+    }
+
+    &.pending {
+      background-color: $pending-status;
+    }
+  }
+
+  .with-ico {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      margin-right: 1.2rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      background-size: cover;
+    }
+
+    &.download-ico {
+
+      &:before {
+        background-image: url("../../img/ico/download-ico.svg");
+      }
+    }
+  }
+}

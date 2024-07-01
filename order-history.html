@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Info-Center</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style/dev/style.css">
+</head>
+<body>
+
+<div class="content">
+
+  <nav>
+    <div class="nav-content">
+      <a class="logo" href="#">
+        <img src="img/sample/logo.svg" alt="logo">
+      </a>
+      <div class="nav-links">
+        <a class="active" href="#">product</a>
+        <a href="#">community</a>
+        <a href="#">price</a>
+        <a href="#">blog</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-container">
+
+    <section class="order-history-section">
+      <div class="order-history-section-content">
+        <h3>Order History</h3>
+        <div class="order-history-table">
+          <div class="order-history-table-row order-history-table-row-head">
+            <div class="order-history-table-unit">Status</div>
+            <div class="order-history-table-unit">Number</div>
+            <div class="order-history-table-unit">date</div>
+            <div class="order-history-table-unit">Period</div>
+            <div class="order-history-table-unit">Bill</div>
+            <div class="order-history-table-unit">ACT</div>
+          </div>
+          <div class="order-history-table-row">
+            <div data-label="Status" class="order-history-table-unit"><span class="status active">Active</span></div>
+            <div data-label="Number" class="order-history-table-unit"><span>№364</span></div>
+            <div data-label="date" class="order-history-table-unit"><span class="text-light">10.02.2023</span></div>
+            <div data-label="Period" class="order-history-table-unit"><span class="text-light">90 days</span></div>
+            <div data-label="Bill" class="order-history-table-unit"><span class="text-light with-ico download-ico">Download</span></div>
+            <div data-label="ACT" class="order-history-table-unit"><span class="text-light with-ico download-ico">Download act</span></div>
+          </div>
+          <div class="order-history-table-row">
+            <div data-label="Status" class="order-history-table-unit"><span class="status expired">Expired</span></div>
+            <div data-label="Number" class="order-history-table-unit"><span>№359</span></div>
+            <div data-label="date" class="order-history-table-unit"><span class="text-light">10.02.2023</span></div>
+            <div data-label="Period" class="order-history-table-unit"><span class="text-light">90 days</span></div>
+            <div data-label="Bill" class="order-history-table-unit"><span class="text-light with-ico download-ico">Download</span></div>
+            <div data-label="ACT" class="order-history-table-unit"><span class="text-light with-ico download-ico">Download act</span></div>
+          </div>
+          <div class="order-history-table-row">
+            <div data-label="Status" class="order-history-table-unit"><span class="status pending">Pending</span></div>
+            <div data-label="Number" class="order-history-table-unit"><span>№180</span></div>
+            <div data-label="date" class="order-history-table-unit"><span class="text-light">10.02.2023</span></div>
+            <div data-label="Period" class="order-history-table-unit"><span class="text-light">90 days</span></div>
+            <div data-label="Bill" class="order-history-table-unit"><span class="text-light with-ico download-ico">Download</span></div>
+            <div data-label="ACT" class="order-history-table-unit"><span class="text-light">-</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-copyright">
+        © 2022 «LOREMIPSUM» All rights reserved.
+      </div>
+      <div class="footer-wallets">
+        <a class="qiwi-wallet" href="#">QIWI wallet</a>
+        <a class="yandex-money" href="#">Yandex Money</a>
+        <a class="web-money" href="#">Web Money</a>
+      </div>
+      <div class="footer-social">
+        <a class="email" href="#">info@ipsum.com</a>
+        <a class="vk-social" href="#">Мы вконтакте</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

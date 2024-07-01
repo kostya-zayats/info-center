@@ -1,0 +1,132 @@
+input[type='range'] {
+  display: block;
+  width: 100%;
+  background: transparent;
+  -webkit-appearance: none;
+
+  @include mobile900 {
+    margin-bottom: 3.4rem;
+  }
+
+  /* Normalize */
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  /* End Normalize */
+
+  /* Thumb */
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2.8rem;
+    width: 2.8rem;
+    background: url('../../img/ico/ico-range.svg') center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin-top: -1.2rem;
+    border-radius: 50%;
+  }
+
+  &::-moz-range-thumb {
+    height: 2.8rem;
+    width: 2.8rem;
+    background: url('../../img/ico/ico-range.svg') center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  &::-ms-thumb {
+    height: 2.8rem;
+    width: 2.8rem;
+    background: url('../../img/ico/ico-range.svg') center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  /* End Thumb */
+
+  /* Track */
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: .7rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+    border: .1rem solid $main-btn-border;
+    border-radius: .3rem;
+  }
+
+  &:active::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.7);
+    border: .1rem solid $main-btn-border;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: .7rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+    border: .1rem solid $main-btn-border;
+    border-radius: .3rem;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: .7rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+    border: .1rem solid $main-btn-border;
+    color: transparent;
+    border-radius: .3rem;
+  }
+
+  &::-ms-fill-lower {
+    background: $input-range-gradient;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: $input-range-gradient;
+  }
+
+  &::-ms-fill-upper {
+    background: $input-range-gradient;
+  }
+
+  &:focus::-ms-fill-upper {
+    background: $input-range-gradient;
+  }
+  /* End Track */
+}
+
+.input-range-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input-range-label {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.input-range-label-value {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color: $range-value-color;
+  white-space: nowrap;
+}

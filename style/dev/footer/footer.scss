@@ -1,0 +1,190 @@
+footer {
+  color: $secondary-text-color;
+  flex-shrink: 0;
+  background-color: $footer-bg;
+  padding: 3rem 0;
+
+  @include mobile900 {
+    padding: 2.4rem 0;
+  }
+
+  a {
+    color: $secondary-text-color;
+  }
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 123.2rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  line-height: 2rem;
+
+  @include mobile900 {
+    flex-direction: column;
+    padding: 0 1.6rem;
+  }
+}
+
+.footer-copyright {
+
+  @include mobile900 {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.footer-wallets, .footer-social {
+  display: flex;
+
+  @include mobile900 {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    order: 1;
+  }
+
+  a {
+    display: flex;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+    }
+  }
+
+  .qiwi-wallet {
+
+    &:before {
+      background-image: url("../../img/ico/qiwi-wallet-ico.svg");
+    }
+  }
+
+  .yandex-money {
+
+    &:before {
+      background-image: url("../../img/ico/yandex-money-ico.svg");
+    }
+  }
+
+  .web-money {
+
+    &:before {
+      background-image: url("../../img/ico/web-money-ico.svg");
+    }
+  }
+
+  .email {
+
+    &:before {
+      background-image: url("../../img/ico/email-ico.svg");
+    }
+  }
+
+  .vk-social {
+
+    &:before {
+      background-image: url("../../img/ico/vk-ico.svg");
+    }
+  }
+}
+
+.footer-wallets {
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: .1rem;
+    height: 1.8rem;
+    background-color: $footer-wallet-text-color;
+
+    @include mobile900 {
+      display: none;
+    }
+  }
+
+  &:before {
+    margin-right: 4rem;
+
+    @include tablet1260 {
+      margin-right: 2rem;
+    }
+  }
+
+  &:after {
+    margin-left: 4rem;
+
+    @include tablet1260 {
+      margin-left: 2rem;
+    }
+  }
+
+  a {
+    color: $footer-wallet-text-color;
+    margin-right: 4.4rem;
+
+    @include tablet1260 {
+      margin-right: 2rem;
+    }
+
+    @include mobile900 {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:before {
+
+      @include tablet1260 {
+        margin-right: .4rem;
+      }
+    }
+  }
+}
+
+.footer-social {
+
+  @include tablet1260 {
+    margin-left: 2rem;
+  }
+
+  @include mobile900 {
+    margin-left: 0;
+  }
+
+  a {
+    margin-left: 6.8rem;
+
+    @include tablet1260 {
+      margin-left: 2rem;
+    }
+
+    @include tablet1260 {
+      margin-left: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+
+      @include mobile900 {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

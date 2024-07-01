@@ -1,0 +1,84 @@
+.intro-section {
+  background: url("../../img/bg/intro.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 20.3rem 0;
+
+  @include mobile900 {
+    background: url("../../img/bg/intro-mob.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 5.6rem 0 8rem;
+  }
+}
+
+.intro-section-content {
+  width: 100%;
+  max-width: 123.2rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+
+  @include mobile900 {
+    padding: 0 1.6rem;
+  }
+
+  h1 {
+    max-width: 78rem;
+
+    @include mobile900 {
+      max-width: 27rem;
+    }
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+    @include mobile900 {
+      max-width: 27rem;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  ul {
+    margin-bottom: 8rem;
+
+    @include mobile900 {
+      max-width: 27rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .no-wrap {
+    color: $main-text-color;
+    white-space: nowrap;
+
+    @include mobile900 {
+      white-space: normal;
+    }
+  }
+}
+
+.intro-section-btn-wrap {
+  display: flex;
+
+  @include mobile900 {
+    flex-direction: column;
+  }
+
+  .btn-main, .btn-secondary {
+    max-width: 18.3rem;
+    margin-right: 3rem;
+
+    @include mobile900 {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .btn-main {
+
+    @include mobile900 {
+      margin-bottom: 2.3rem;
+    }
+  }
+}
