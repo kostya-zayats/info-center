@@ -1191,7 +1191,7 @@ footer {
   min-height: 100%; }
   @media (max-width: 900px) {
     .order-history-section {
-      padding: 2.6rem 0;
+      padding: 2.6rem 0 6.8rem;
       background: none;
       background-color: #252531; } }
 
